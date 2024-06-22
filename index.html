@@ -1,0 +1,175 @@
+<html>
+  <head>
+  	<!-- jsDelivr CDN fallback -->
+	<script defer>
+		(a=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",n=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+n),m=e=>e.replace(t+n,t+r),u=window.setTimeout,v=a.querySelectorAll.bind(a),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=a.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(n+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=a.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,a.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==n||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+	</script>
+    <title>圆周之美</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_HTMLorMML&locale=zh-hans"></script>
+  </head>
+  <body>
+<div id="page">
+<div id="header">
+<h4>圆周之美<h4>
+</div>
+<div id="1" style="float:left;width:60%;height:;">
+<p>`\left(a+b\right)^{2}=a^{2}+2ab+b^{2}`</p>
+<p>`\left(a+b\right)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}`</p>
+<p>`\left(a+b\right)^{4}=a^{4}+4a^{3}b+6a^{2}b^{2}+4ab^{3}+b^{4}`</p>
+<p>`\left(a+b\right)^{5}=a^{5}+5a^{4}b+10a^{3}b^{2}+10a^{2}b^{3}+5ab^{4}+b^{5}`</p>
+<p>`\left(a+b\right)^{n}=\sum_{i=0}^{n}C_{n}^{i}a^{n-i}b^{i}`</p>
+<p>`\left(a+b+c\right)^{n}=\sum_{i=0}^{n}C_{n}^{i}a^{n-i}b^{i}+\sum_{i=0}^{n}C_{n}^{i}a^{n-i}c^{i}+\sum_{i=0}^{n}C_{n}^{i}b^{n-i}c^{i}`</p>
+</div>
+<div id="21" style="float:right;width:40%;height:;">
+<p>`\qquad \quad \quad \quad \quad \qquad \qquad \qquad \qquad \qquad 1`</p>
+<p>`\qquad \quad \quad \quad \qquad \qquad \qquad \qquad \qquad 1\quad 1`</p>
+<p>`\qquad \quad \quad \quad \qquad \qquad \qquad \qquad 1\qquad 2\qquad 1`</p>
+<p>`\qquad \quad \quad \quad \qquad \qquad \qquad 1\qquad 3\qquad \quad 3\qquad 1`</p>
+<p>`\qquad \quad \quad \quad \qquad \qquad 1\qquad 4\qquad \quad 6\qquad \quad 4\qquad 1`</p>
+<p>`\qquad \quad \quad \qquad \qquad 1\qquad 5\qquad 10\qquad 10\qquad 5\qquad 1`</p>
+<p>`\qquad \quad \quad \qquad 1\qquad 6\qquad 15\qquad 20\qquad 15\qquad 6\qquad 1`</p>
+<p>`\qquad \quad \quad 1\qquad 7\qquad 21\qquad 35\qquad 35\qquad 21\qquad 7\qquad 1`</p>
+<p>`\qquad \quad 1\qquad 8\qquad 28\qquad 56\qquad 70\qquad 56\qquad 28\qquad 8\qquad 1`</p>
+<p>`\qquad 1\qquad 9\qquad 36\qquad 84\quad 126\quad 126\quad 84\qquad 36\qquad 9\qquad 1`</p>
+<p>`1\qquad 10\quad 45\quad 120\quad 210\quad 252\quad 210\quad 120\quad 45\quad 10\qquad 1`</p>
+</div>
+<div id="2" style="float:left;width:15%;height:;">
+<p>`a,b,c,d,e`</p>
+<p>`ab \quad ac \quad ad \quad ae`</p>
+<p>`bc \quad bd \quad be`</p>
+<p>`cd \quad ce`</p>
+<p>`de`</p>
+</div>
+<div id="3" style="float:left;width:10%;height:;">
+<div style="height:5em;"></div>
+<p>`共10种`</p>
+<p>`C_5^2=10`</p>
+</div>
+<div id="5" style="float:left;width:10%;height:;">
+<p>`a,b,c`</p>
+<p>`ab \quad ac`</p>
+<p>`bc`</p>
+</div>
+<div id="6" style="float:left;width:25%;height:;">
+<div style="height:5em;"></div>
+<p>`共3种`</p>
+<p>`C_3^2=3`</p>
+</div>
+<div id="22" style="float:left;width:40%;height:10em;">
+<p>`多项式定理：`</p>
+<p>`{\sum_{i=0}^{n}C_{n}^{i}\sum_{j=1}^{m-1}B_{j}^{n-i}\sum_{k=j+1}^{m}B_{k}^{i}}_{（通项公式）}`</p>
+<p>`其中，n表示多项式的次数`</p>
+<p>`m表示多项式的项数`</p>
+</div>
+<div id="4" style="float:left;width:25%;height:;">
+<p>`a被加了 \underline 4 次`</p>
+<p>`b被加了 \underline 4 次`</p>
+<p>`c被加了 \underline 4 次`</p>
+<p>`d被加了 \underline 4 次`</p>
+<p>`e被加了 \underline 4 次`</p>
+</div>
+<div id="7" style="float:left;width:35%;height:;">
+<p>`a被加了 \underline 2 次`</p>
+<p>`b被加了 \underline 2 次`</p>
+<p>`c被加了 \underline 2 次`</p>
+</div>
+<div id="8" style="float:left;width:;height:;">
+<div style="height:5em;"></div>
+<p>`被多加的项：`</p>
+<p>`\left(m-1\right)\sum_{l=1}^{m}B_l^n`</p>
+</div>
+<div id="9" style="float:left;width:;height:;">
+<p>`最终公式：`</p>
+<p>`\left(B_{1}+B_{2}+\cdot\cdot\cdot+B_{m}\right)^{n}=\sum_{i=0}^{n}C_{n}^{i}\sum_{j=1}^{m-1}B_{j}^{n-i}\sum_{k=j+1}^{m}B_{k}^{i}-\left(m-1\right)\sum_{l=1}^{m}B_{l}^{n}`</p>
+</div>
+<div id="29" style="float:right;width:40%;height:;">
+<div id="23" style="float:left;width:100%;height:;">
+<p>`设T_{s}=C_{n}^{i}B_{j}^{n-i}B_{k}^{i}`</p>
+</div>
+<div id="24" style="float:left;width:50%;height:;">
+<p>`则i是s的函数`</p>
+<p>`则j是s的函数`</p>
+<p>`则k是s的函数`</p>
+</div>
+<div id="25" style="float:left;width:50%;height:;">
+<p>`自变量：s`</p>
+<p>`因变量：i,j,k`</p>
+<p>`即用s表示i,j,k`</p>
+</div>
+<div id="26" style="float:left;width:100%;height:;">
+<p>`如果能用s表示i,j,k，即可推出关于s的通项公式。`</p>
+</div>
+</div>
+<div id="10" style="float:left;width:;height:;">
+<p>`令a=B_{1}, b=B_{2},c=B_{3},d=B_{4},e=B_{5}`</p>
+<p>`\left(B_{1}+B_{2}+B_{3}+B_{4}+B_{5}\right)^{n}`</p>
+<p>`=\sum_{i=0}^{n}C_{n}^{i}B_{1}^{n-i}B_{2}^{i}+\sum_{i=0}^{n}C_{n}^{i}B_{1}^{n-i}B_{3}^{i}+\sum_{i=0}^{n}C_{n}^{i}B_{1}^{n-i}B_{4}^{i}+\cdot\cdot\cdot`</p>
+<p>`=\sum_{i=0}^{n}C_{n}^{i}\left(B_{1}^{n-i}B_{2}^{i}+B_{1}^{n-i}B_{3}^{i}+B_{1}^{n-i}B_{4}^{i}+\cdot\cdot\cdot\right)`</p>
+<p>`=\sum_{i=0}^{n}C_{n}^{i}\left[\sum_{j=1}^{m-1}B_{j}^{n-i}\left(\sum_{k=j+1}^{m}B_{k}^{i}\right)\right]`</p>
+</div>
+<div id="12" style="float:left;width:;height:;">
+<p>`好耶，`</p>
+<p>`是“五项式定理”耶！`</p>
+</div>
+<div id="13" style="float:left;width:;height:;">
+<p>`总项数：\left(n+1\right)\left(m-1\right)m`</p>
+<p>`通项：C_{n}^{i}B_{p}^{n-i}B_{q}^{i}`</p>
+</div>
+<div id="14" style="float:left;width:;height:;">
+<p>`令n=5`</p>
+</div>
+<div id="15" style="float:left;width:;height:;">
+<p>`T_{1}=C_{5}^{0}B_{1}^{5}B_{2}^{0}`</p>
+<p>`T_{2}=C_{5}^{0}B_{1}^{4}B_{2}^{1}`</p>
+<p>`T_{3}=C_{5}^{0}B_{1}^{3}B_{2}^{2}`</p>
+<p>`T_{4}=C_{5}^{0}B_{1}^{2}B_{2}^{3}`</p>
+<p>`T_{5}=C_{5}^{0}B_{1}^{1}B_{2}^{4}`</p>
+<p>`T_{6}=C_{5}^{0}B_{1}^{0}B_{2}^{5}`</p>
+</div>
+<div id="16" style="float:left;width:;height:;">
+<p>`T_{7}=C_{5}^{0}B_{1}^{0}B_{3}^{5}`</p>
+<p>`T_{8}=C_{5}^{0}B_{1}^{1}B_{3}^{4}`</p>
+<p>`T_{9}=C_{5}^{0}B_{1}^{2}B_{3}^{3}`</p>
+<p>`T_{10}=C_{5}^{0}B_{1}^{3}B_{3}^{2}`</p>
+<p>`T_{11}=C_{5}^{0}B_{1}^{4}B_{3}^{1}`</p>
+<p>`T_{12}=C_{5}^{0}B_{1}^{5}B_{3}^{0}`</p>
+</div>
+<div id="17" style="float:left;width:;height:;">
+<p>`T_{13}=C_{5}^{0}B_{1}^{0}B_{4}^{5}`</p>
+<p>`T_{14}=C_{5}^{0}B_{1}^{1}B_{4}^{4}`</p>
+<p>`T_{15}=C_{5}^{0}B_{1}^{2}B_{4}^{3}`</p>
+<p>`\cdot\cdot\cdot\cdot\cdot\cdot`</p>
+</div>
+<div id="18" style="float:left;width:;height:;">
+<p>`余数是周期性变化的，所以应该取余。`</p>
+</div>
+<div id="27" style="float:left;width:;height:;">
+<p>`\qquad \left(n+1\right)项\cdot\left(m-1\right)项\cdot m项`</p>
+<p>`\qquad \qquad \qquad i \qquad \qquad \cdot \qquad \qquad j \qquad \qquad \cdot \qquad \qquad k \qquad \qquad `</p>
+<p>`\qquad 1° \qquad 0 \qquad \qquad \cdot \qquad \qquad 1 \qquad \qquad \cdot \qquad \qquad 2 \qquad \qquad `</p>
+<p>`\qquad 2° \qquad 0 \qquad \qquad \cdot \qquad \qquad 1 \qquad \qquad \cdot \qquad \qquad 3 \qquad \qquad `</p>
+<p>`在m=5,n=5时`</p>
+<p>`项数 6 \qquad \qquad \cdot \qquad \qquad 4 \qquad \qquad \cdot \qquad \qquad 5 \qquad \qquad _{=120}`</p>
+<p>`i=向下取整\left(\frac{s}{\left(m-1\right)m}\right)`</p>
+<p>`j=向上取整\left(\frac{s}{\left(n+1\right)m}\right)`</p>
+<p>`k=向上取整\left(\frac{s}{\left(n+1\right)\left(m-1\right)}\right)`</p>
+<p>`哦耶！通项公式来喽！`</p>
+<p>`T_{s}=C_{n}^{向下取整\left(\frac{s}{\left(m-1\right)m}\right)} \cdot B_{向上取整\left(\frac{s}{\left(n+1\right)m}\right)}^{n-向下取整\left(\frac{s}{\left(m-1\right)m}\right)} \cdot B_{向上取整\left(\frac{s}{\left(n+1\right)\left(m-1\right)}\right)}^{n-向下取整\left(\frac{s}{\left(m-1\right)m}\right)}`</p>
+<p>`（这个是错的）`</p>
+</div>
+<div id="19" style="float:left;width:;height:;">
+<p>`s \quad 1,2,3,4,5,6,7,8,9,10,11,12`</p>
+<p>`k \quad 1,2,3,4,5,6,1,2,3,4,5,6`</p>
+</div>
+<div id="20" style="float:left;width:;height:;">
+<p>`Next\ Station:`</p>
+<p>`余数与周期性.`</p>
+</div>
+<div id="beian" style="float:left;width:100%;height:;">
+<p style="text-align:center;">
+<img style="height:1em;" src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png"><a href="https://beian.miit.gov.cn/" style="color:black;" target="_blank">豫ICP备2024073910号</a></p>
+</div>
+</div>
+  </body>
+</html>
